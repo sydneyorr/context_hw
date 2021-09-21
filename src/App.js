@@ -3,6 +3,8 @@ import { Container, } from "semantic-ui-react";
 import { Switch, Route, } from "react-router-dom";
 import Home from './Home';
 import Navbar from './Navbar';
+import User from './User';
+import UserProfile from './UserProfile';
 
 const App = () => (
   <Fragment>
@@ -13,6 +15,11 @@ const App = () => (
           exact
           path="/"
           component={Home}
+        />
+        <Route
+          exact
+          path="/user/profile"
+          component={UserProfile}
         />
       </Switch>
     </Container>

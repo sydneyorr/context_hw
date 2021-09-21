@@ -14,6 +14,8 @@ class UserForm extends React.Component {
   
   handleSubmit = (e) => {
     e.preventDefault();
+    const user = { ...this.state, };
+    this.props.updateUser(user);
   }
   
   render() {
@@ -21,21 +23,21 @@ class UserForm extends React.Component {
     return (
       <Form onSubmit={this.handleSubmit}>
         <Form.Input
-          label="New First Name"
+          label="First Name"
           type="text"
           name="firstName"
           value={firstName}
           onChange={this.handleChange}
         />
         <Form.Input
-          label="New Last Name"
+          label="Last Name"
           type="text"
           name="lastName"
           value={lastName}
           onChange={this.handleChange}
         />
         <Form.Input
-          label="New Email"
+          label="Email"
           type="text"
           name="email"
           value={email}
@@ -46,8 +48,6 @@ class UserForm extends React.Component {
     )
   }
 }
-
-export default UserForm;
 
 
 const ConnectedUserForm = (props) => {
@@ -60,6 +60,7 @@ const ConnectedUserForm = (props) => {
           lastName={value.lastName}
           email={value.email}
           avatar={value.avatar}
+          updateUser={value.updateUser}
         />
       )}
     </UserConsumer>
