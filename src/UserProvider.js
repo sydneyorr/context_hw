@@ -9,7 +9,7 @@ class UserProvider extends React.Component {
     email: "test@gmail.com",
     firstName: "sydney",
     lastName: "orr",
-    avatar: "avatar",
+    avatar: <img src="https://robohash.org/sing.png?set=set4" alt="Spot Cat" />,
     updateUser: (user) => this.updateUser(user)
   };
 
