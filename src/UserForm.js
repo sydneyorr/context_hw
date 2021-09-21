@@ -60,8 +60,9 @@ const avatarOptions = [
   { text: "Spot Cat", value: <img src="https://robohash.org/sing.png?set=set4" alt="Spot Cat" />, },
   { key: "s", text: "Investigator Cat", value: <img src="https://robohash.org/dog.png?set=set4" alt="Investigator Cat" />, },
   { key: "g", text: "Jamming Cat", value: <img src="https://robohash.org/purple.png?set=set4" alt="Jamming Cat" />, },
-  { key: "p", text: "Scribe Cat", value: <img src="https://robohash.org/grass.png?set=set4" alt="Scribe Cat" />, },
+  { key: "p", text: "Scribe Cat", value: <img src="https://robohash.org/grass.png?set=set4" alt="Scribe Cat" />, }
 ];
+
 
 const ConnectedUserForm = (props) => {
   return (
