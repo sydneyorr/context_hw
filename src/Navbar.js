@@ -12,9 +12,10 @@ const Navbar = () => (
             Home
           </Menu.Item>
         </NavLink>
-        <NavLink to="/user">
+        <NavLink to="/user/profile">
           <Menu.Item>
-            User
+            { value.firstName }
+            { value. lastName }
           </Menu.Item>
         </NavLink>
       </Menu> 

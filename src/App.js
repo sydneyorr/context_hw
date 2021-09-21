@@ -4,6 +4,7 @@ import { Switch, Route, } from "react-router-dom";
 import Home from './Home';
 import Navbar from './Navbar';
 import User from './User';
+import UserProfile from './UserProfile';
 
 const App = () => (
   <Fragment>
@@ -17,8 +18,8 @@ const App = () => (
         />
         <Route
           exact
-          path="/user"
-          component={User}
+          path="/user/profile"
+          component={UserProfile}
         />
       </Switch>
     </Container>
