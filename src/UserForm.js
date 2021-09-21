@@ -43,12 +43,25 @@ class UserForm extends React.Component {
           value={email}
           onChange={this.handleChange}
         />
+         <Form.Select
+          label="Avatar"
+          name="avatar"
+          value={avatar}
+          onChange={this.handleChange}
+          options={avatarOptions}
+        />
         <Form.Button color="blue">Save</Form.Button>
       </Form>
     )
   }
 }
 
+const avatarOptions = [
+  { text: "Spot Cat", value: <img src="https://robohash.org/sing.png?set=set4 " />, },
+  { key: "s", text: "Investigator Cat", value: <img src="https://robohash.org/dog.png?set=set4 " />, },
+  { key: "g", text: "Jamming Cat", value: <img src="https://robohash.org/purple.png?set=set4 " />, },
+  { key: "p", text: "Scribe Cat", value: <img src="https://robohash.org/grass.png?set=set4 " />, },
+];
 
 const ConnectedUserForm = (props) => {
   return (
