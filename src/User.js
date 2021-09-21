@@ -6,7 +6,7 @@ const User = () => (
   <UserConsumer>
     { value => (
  
-      <Card style={{width:"330px"}}>
+      <Card style={{width:"330px", boxShadow:"0px 1px 3px 0px"}}>
         <Card.Content>{value.avatar}</Card.Content>
         <Card.Content>
           <Card.Header>{value.firstName} {value.lastName}</Card.Header>
