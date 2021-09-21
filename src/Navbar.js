@@ -12,6 +12,11 @@ const Navbar = () => (
             Home
           </Menu.Item>
         </NavLink>
+        <NavLink to="/user">
+          <Menu.Item>
+            User
+          </Menu.Item>
+        </NavLink>
       </Menu> 
     )}
   </UserConsumer>
