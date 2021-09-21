@@ -6,7 +6,7 @@ const User = () => (
   <UserConsumer>
     { value => (
  
-      <Card>
+      <Card style={{width:"330px"}}>
         <Card.Content>{value.avatar}</Card.Content>
         <Card.Content>
           <Card.Header>{value.firstName} {value.lastName}</Card.Header>
@@ -22,7 +22,6 @@ const User = () => (
     )}
   </UserConsumer>
   )
-
 
 
 export default User;
